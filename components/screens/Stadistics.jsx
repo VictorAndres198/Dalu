@@ -1,18 +1,13 @@
 import { StyleSheet, Text, View, Image } from 'react-native';
-import icon from '../assets/icon.png'
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-export function Main() {
+export function Stadistics() {
   const insets = useSafeAreaInsets();    
 
   return (
     <View style={{ paddingTop:insets.top, padding:12}}>
         <View style={styles.container}>
-            <Image source={icon} style={{
-                width: 100,
-                height: 100
-                }} />
-            <Text style={{ color: 'white'}}>Probando la App 2</Text>
+            <Text style={{ color: '#000', fontSize:24}}>ESTE ES EL STADISTICS SCREEN</Text>
         </View>
     </View>
   );
@@ -20,8 +15,8 @@ export function Main() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     alignItems: 'center',
+    justifyContent: 'center',
     paddingTop:12,
   },
 });
